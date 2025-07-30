@@ -3,6 +3,4 @@ Sunucunuzun terminaline aşağıdaki tek satır komutu kopyalayıp yapıştırma
 
 pip install python-telegram-bot tefas-crawler pandas
 
-
-screen 
-fon_bot.py
+python3 fon_bot.py
