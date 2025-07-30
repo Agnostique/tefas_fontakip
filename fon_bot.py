@@ -6,7 +6,7 @@ from datetime import date, datetime
 
 # --- BURAYI DÜZENLEYİN ---
 # 1. GÜVENLİK UYARISI: Bu token'ı BotFather'dan yenileyip gizli tutmanız önemlidir.
-TELEGRAM_API_TOKEN = "TelegramBotToken"
+TELEGRAM_API_TOKEN = "BURAYA_KENDİ_TELEGRAM_TOKENINIZI_GİRİN"
 
 # 2. PORTFÖYÜNÜZÜ BURAYA GİRİN
 #    İstediğiniz üzerine portföyünüz güncellenmiştir.
