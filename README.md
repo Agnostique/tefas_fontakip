@@ -12,7 +12,7 @@ Botun `/portfoyum` komutuna verdiği yanıt aşağıdakine benzer olacaktır:
 ```
 📈 Portföyünüzün Güncel Durumu 📈
 
-*MKG* - Mükafat Portföy Birinci Serbest Fon
+*MKG* - AKTİF PORTFÖY ALTIN KATILIM FONU
   Adet: 76047
   Maliyet: 11.7016 TL
   Güncel Fiyat: 11.8500 TL
@@ -21,7 +21,7 @@ Botun `/portfoyum` komutuna verdiği yanıt aşağıdakine benzer olacaktır:
   Toplam K/Z: +11264.44 TL (%1.27) ✅
   Günlük K/Z: +1609.21 TL
 
-*IDL* - İş Portföy Silverland Global Gümüş BIST Depo Sertifikaları Serbest Fon
+*IDL* - AKTİF PORTFÖY PARA PİYASASI (TL) FONU
   Adet: 566457
   Maliyet: 3.9814 TL
   Güncel Fiyat: 4.1000 TL
