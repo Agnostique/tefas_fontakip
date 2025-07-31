@@ -52,7 +52,7 @@ Projeyi kendi sunucunuzda çalıştırmak için aşağıdaki adımları izleyin.
 
 1.  **Projeyi Klonlayın:**
     ```bash
-    git clone [https://github.com/Agnostique/tefas_fontakip.git](https://github.com/Agnostique/tefas_fontakip.git)
+    git clone [https://github.com/Agnostique/tefas_fontakip.git]
     cd tefas_fontakip
     ```
 
