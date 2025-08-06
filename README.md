@@ -7,44 +7,40 @@ Bu proje, Türkiye Elektronik Fon Dağıtım Platformu (TEFAS) verilerini kullan
 
 ## Örnek Ekran Görüntüsü
 
-Botun `/portfoyum` komutuna verdiği yanıt aşağıdakine benzer olacaktır:
+Botun `/portfoyum` komutuna verdiği yanıt, tüm yeni özelliklerle birlikte aşağıdakine benzer olacaktır:
 
 ```
 📈 Portföyünüzün Güncel Durumu 📈
 
-*MKG* - AKTİF PORTFÖY ALTIN KATILIM FONU
-  Adet: 76047
-  Maliyet: 11.7016 TL
-  Güncel Fiyat: 11.8500 TL
-  Alım Tarihi: 2025-07-23
-  Geçen Süre: 7 gün
-  Toplam K/Z: +11264.44 TL (%1.27) ✅
-  Günlük K/Z: +1609.21 TL
-
-*IDL* - AKTİF PORTFÖY PARA PİYASASI (TL) FONU
-  Adet: 566457
-  Maliyet: 3.9814 TL
-  Güncel Fiyat: 4.1000 TL
-  Toplam K/Z: +67185.76 TL (%2.98) ✅
-  Günlük K/Z: +9597.97 TL
+*TGE* - İş Portföy BIST Teknoloji Ağırlık Sınırlamalı Endeksi Hisse Senedi Fonu
+  Adet: `50`
+  Maliyet: `15.2500` TL
+  Güncel Fiyat: `22.5000` TL
+  Toplam Değer: `1.125,00` TL
+  Alım Tarihi: `2024-11-01`
+  Geçen Süre: `278 gün`
+  Toplam K/Z: `+362,50 TL (%47.54)` ✅
+  Günlük K/Z: `+1,30 TL`
 
 -----------------------------------
 📊 Toplam Portföy Özeti 📊
-  Toplam Maliyet: 3145678.90 TL
-  Güncel Değer: 3224499.10 TL
-  Toplam Kar/Zarar: +78420.20 TL (%2.50) ✅
+  Toplam Maliyet: `889.375,12 TL`
+  Güncel Değer: `901.156,95 TL`
+  Toplam Kar/Zarar: `+11.781,83 TL (%1.32)` ✅
 ```
 
 ## Özellikler
 
 - **Anlık Veri:** TEFAS'tan güncel fon fiyatlarını çeker.
 - **Detaylı Analiz:** Her bir fon için aşağıdaki metrikleri hesaplar:
-  - Toplam Kar/Zarar (Tutar ve Yüzde)
-  - Alım tarihinden itibaren geçen gün sayısı
-  - Günlük ortalama Kar/Zarar tutarı
+  - Fonun güncel toplam değeri.
+  - Alım tarihinden itibaren geçen gün sayısı.
+  - Toplam Kar/Zarar (Tutar ve Yüzde).
+  - Günlük ortalama Kar/Zarar tutarı.
+- **Okunaklı Raporlama:** Tüm parasal değerleri, okumayı kolaylaştırmak için Türkçe formatında (`1.234,56 TL`) gösterir.
 - **Portföy Özeti:** Tüm varlıkların toplam maliyetini, güncel değerini ve genel kar/zarar durumunu özetler.
-- **Kolay Kurulum:** Birkaç adımla kolayca kendi sunucunuzda çalıştırılabilir.
-- **Kişiselleştirilebilir:** Kendi portföy bilgilerinizi (fon kodu, adet, maliyet, tarih) kod içerisinden kolayca güncelleyebilirsiniz.
+- **Sağlam ve Güvenilir:** `tefas-crawler` kütüphanesi sayesinde TEFAS'taki altyapı değişikliklerine karşı dayanıklıdır.
+- **Hata Yönetimi:** Bir fonun verisi alınamazsa bile diğer fonların analizine devam eder.
 
 ## Kurulum
 
@@ -71,7 +67,7 @@ Botu çalıştırmadan önce `fon_bot.py` dosyasında birkaç temel yapılandır
     - `fon_bot.py` dosyasındaki `TELEGRAM_API_TOKEN` değişkenine bu token'ı atayın.
 
     > **⚠️ Güvenlik Uyarısı:**
-    > API Token'ınız botunuzun şifresidir. **Asla** bu token'ı halka açık bir GitHub reposunda veya başkalarıyla paylaşmayın! Profesyonel projelerde bu tür gizli bilgileri "Environment Variables" (Ortam Değişkenleri) veya `.env` dosyaları ile yönetmek en iyi pratiktir.
+    > API Token'ınız botunuzun şifresidir. **Asla** bu token'ı halka açık bir GitHub reposunda veya başkalarıyla paylaşmayın!
 
 2.  **Portföy Bilgileri:**
     - `fon_bot.py` dosyasının en üstündeki `PORTFOY` listesini kendi fonlarınıza göre düzenleyin.
@@ -90,10 +86,6 @@ Botu çalıştırmadan önce `fon_bot.py` dosyasında birkaç temel yapılandır
     - `/start`: Bota hoşgeldin mesajı attırır.
     - `/portfoyum`: Portföyünüzün detaylı analizini getirir.
 
-## Veri Kaynağı
-
-Bu bot, tüm fon verilerini Türkiye Elektronik Fon Dağıtım Platformu (TEFAS) üzerinden anlık olarak çekmektedir. Botun çalışması, TEFAS'ın altyapısının ve veri sunum şeklinin devamlılığına bağlıdır.
-
 ## Lisans
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakınız.
+Bu proje MIT Lisansı altında lisanslanmıştır.
