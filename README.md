@@ -12,7 +12,7 @@ Botun `/portfoyum` komutuna verdiği yanıt, tüm yeni özelliklerle birlikte a�
 ```
 📈 Portföyünüzün Güncel Durumu 📈
 
-*TGE* - İş Portföy BIST Teknoloji Ağırlık Sınırlamalı Endeksi Hisse Senedi Fonu
+*TGE* - İŞ PORTFÖY EMTİA YABANCI BYF FON SEPETİ FONU
   Adet: `50`
   Maliyet: `15.2500` TL
   Güncel Fiyat: `22.5000` TL
